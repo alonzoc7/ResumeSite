@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+}
+body {
+    background-image: url("./images/pexels-wdnet-518245.jpg");
+    background-size: contain;
+}
+#navBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+#navBox, #infoBox, #personal {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: floralwhite;
+}
+#headshot {
+    width: 50%;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+}
+#name {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items:center;
+}
+#pronouns {
+    font-size: medium;
+    opacity: .5;
+    margin-left: 2px;
+}
+.icons {
+    width: 30px;
+    height: 30px;
+}
+#locationBox, #emailBox {
+    display: flex;
+    align-items: center;
+    opacity: .5;
+}
+#email {
+    margin-left: 5px;
+}
+#download {
+    font-size: 17px;
+    border: 1px solid rgba(123, 195, 124, 0.859);
+    border-radius: 2px;
+    background-color: rgba(137, 218, 139, 0.859);
+    box-shadow: 10px 10px 7px -7px rgba(204,204,204,1);
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+#arrowIcon {
+    width: 15px;
+    height: 15px;
+}
+#infoBox {
+    display: flex;
+    flex-direction: column;
+}
+li {
+    margin-left: 5%;
+}
+.infoTitle {
+    margin-top: 3%;
+}
+.line {
+    background-color: rgba(137, 218, 139, 0.859);
+    width: 100%;
+    height: 2px;
+}
+.workHeader, .schoolHeader {
+    font-weight: bold;
+}
+.workSubHeader, .schoolSubHeader {
+    opacity: .5;
+}
+.personalPic {
+    width: 50%;
+    border-radius: 35%;
+}
+
+@media (min-width: 756px){
+    body {
+        display: flex;
+    }
+    #rightContainer {
+        flex-basis: 80%;
+    }
+    #headshot{
+        width: 75%;
+    }
+    #download {
+        font-size: 19px;
+    }
+    #infoBox, #personal {
+        font-size: 19px;
+    }
+    .personalPic {
+        width: 25%;
+    }
+    .personalBox{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+}
