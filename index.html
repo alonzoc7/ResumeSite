@@ -62,8 +62,13 @@
         /></a>
       </div>
       <button id="download">
-        <img src="./images/arrowIcon.png" alt="arrow_icon" id="arrowIcon" />
-        Download Resume
+        <a
+          id="dlText"
+          href="./files/engineeringResume.pdf"
+          download="coreyAlonzoResume.pdf"
+          ><img src="./images/arrowIcon.png" alt="arrow_icon" id="arrowIcon" />
+          Download Resume</a
+        >
       </button>
     </div>
     <div id="rightContainer">
@@ -71,48 +76,60 @@
         <h3 id="about">About Me</h3>
         <div class="line"></div>
         <p id="aboutText">
-          I'm a software engineer with experience in backend, frontend, cloud
-          services, and containerization. Currently I'm looking for a position
-          to work on frontend applications.
+          I'm a software engineer with experience in fullstack, cloud services,
+          microservice architecture, and containerization. I'm currently
+          interested in a frontend position. Check out the my github repo for
+          this website
+          <a href="https://github.com/alonzoc7/resumeSiteBasic">here</a>.
         </p>
         <h3 id="skills" class="infoTitle">Skills</h3>
         <div class="line"></div>
         <ul id="skillsList">
           <li><b>Languages</b>: Python, Javascript, HTML, CSS, Java, C++</li>
-          <li><b>Tools</b>: React, Git, Github, Jenkins, Redhat OCP</li>
-          <li><b>Cloud</b>: AWS</li>
+          <li><b>Tools</b>: React, Git, Github, Jenkins, Expo, Node, VSCode</li>
+          <li><b>Cloud</b>: OCP, AWS</li>
+          <li>
+            <b>Soft-Skills</b>: Customer Service, Active Listening, Verbal &
+            Written Communication
+          </li>
         </ul>
         <h3 id="experience" class="infoTitle">Work Experience</h3>
         <div class="line"></div>
-        <p class="workHeader">Capgemini - Senior Software Engineer</p>
+        <p class="workHeader">Senior Software Engineer - Capgemini</p>
         <p class="workSubHeader">Chicago, IL</p>
         <ul>
           <li>
-            Collaborate on a team to produce & maintain client services in
-            Banking/Insurance.
+            Collaborate on teams to code client services in banking/insurance.
           </li>
           <li>Improve & Implement code independently.</li>
-          <li>Promote & Monitor code in production levels.</li>
+          <li>Produce & maintain microservice architectures.</li>
+          <li>Promote code to production level.</li>
+          <li>Monitor production level services.</li>
           <li>Support users with technical inquiries.</li>
-          <li>Manage & Support new-hires.</li>
+          <li>Manage new-hires.</li>
         </ul>
-        <p class="workHeader">@Munchies - Assistant Manager/Server</p>
+        <p class="workHeader">
+          Assistant Manager/Server - @Munchies Rolled Ice Cream
+        </p>
         <p class="workSubHeader">Naperville, IL</p>
         <ul>
-          <li>Receive & Prepare customer orders.</li>
+          <li>Intake customer orders.</li>
           <li>Operate the cash register.</li>
-          <li>Maintain store cleanliness & order.</li>
+          <li>Ensure storefront cleanliness and organization.</li>
+          <li>Manage newer staff.</li>
         </ul>
         <h3 id="school" class="infoTitle">School</h3>
         <div class="line"></div>
         <p class="schoolHeader">B.A. Computer Science, Psychology Minor</p>
         <p class="schoolSubHeader">North Central College, 2021</p>
         <ul>
+          <li>3.7 GPA</li>
           <li>Alpha-Alpha-Alpha National Honor Society</li>
         </ul>
         <p class="schoolHeader">A.A. Psychology</p>
         <p class="schoolSubHeader">Waubonsee Community College, 2018</p>
         <ul>
+          <li>4.0 GPA</li>
           <li>Psi Beta National Honor Society</li>
           <li>Phi Theta Kappa Honor Society</li>
         </ul>
@@ -123,6 +140,10 @@
           <li>Recipient of the Lucile Gustafson Scholarship</li>
         </ul>
       </div>
+      <div id="projects">
+        <h3>Projects</h3>
+        <div class="line"></div>
+      </div>
       <div id="personal">
         <h3 id="personalAbout">More About Me Personally!</h3>
         <div class="line"></div>
@@ -132,38 +153,64 @@
             favorite meals are my grandma's pork adobo with rice, and a classic
             cheeseburger with fries - preferably from Portillo's.
           </p>
-          <img src="./images/family1.jpeg" alt="" class="personalPic" /><img
+          <img
+            src="./images/family1.jpeg"
+            alt="family_1"
+            class="personalPic"
+          /><img
             src="./images/family2.jpeg"
-            alt=""
+            alt="family_2"
             class="personalPic"
           />
         </div>
+        <div class="subline"></div>
         <div class="personalBox">
           <p>
-            A couple of my hobbies are playing video games and watching animated
-            shows.
+            A couple of my hobbies are playing video games, watching animated
+            shows, and cosplaying characters from media I love.
           </p>
-          <img src="./images/cosplay1.jpeg" alt="" class="personalPic" /><img
+          <img
+            src="./images/rebecca.png"
+            alt="rebecca_chambers"
+            class="personalPic"
+          /><img
             src="./images/cosplay2.jpeg"
-            alt=""
+            alt="cosplay"
             class="personalPic"
           />
         </div>
+        <div class="subline"></div>
+        <div class="personalBox">
+          <p>
+            My favorite holiday is Halloween and I love scary movies/games. I
+            adore Halloween themed treats and decor!
+          </p>
+          <img
+            src="./images/Resi4-gc-cover.jpg"
+            alt="resident_evil_4_gamecube"
+            class="personalPic"
+          /><img
+            src="./images/scaryGodmother.jpg"
+            alt="scary_godmother_halloween_spooktacular"
+            class="personalPic"
+          />
+        </div>
+        <div class="subline"></div>
         <div class="personalBox">
           <p>
             Something interesting about me is that I've changed my hair color a
-            few times. I've had platinum blond, green, purple, magenta, and pink
-            (and of course my natural hair color - black). Although, I think I'm
-            sticking with pink for now!
+            few times. I've had platinum blond, green, purple, magenta, and
+            pink. Although, I think I'm sticking with pink for now!
           </p>
-          <img src="./images/greenHair.jpeg" alt="" class="personalPic" /><img
+          <img
+            src="./images/greenHair.jpeg"
+            alt="green_hair"
+            class="personalPic"
+          /><img
             src="./images/purpleHair.jpeg"
-            alt=""
+            alt="purple_hair"
             class="personalPic"
           />
-        </div>
-        <div class="personalBox">
-          <p>My favorite holiday is Halloween and I love scary movies/games!</p>
         </div>
       </div>
     </div>

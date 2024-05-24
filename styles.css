@@ -14,7 +14,7 @@ body {
     align-items: center;
     height: fit-content;
 }
-#navBox, #infoBox, #personal {
+#navBox, #infoBox, #personal, #projects {
     border: 1px solid darkgray;
     border-radius: 5px;
     margin: 15px;
@@ -27,9 +27,9 @@ body {
 }
 #name {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 8vw;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 #pronouns {
     font-size: medium;
@@ -49,14 +49,23 @@ body {
     margin-left: 5px;
 }
 #download {
-    font-size: 17px;
-    border: 1px solid rgba(123, 195, 124, 0.859);
+    font-size: 5vw;
+    border: 1px solid rgba(214, 120, 159, 0.859);
     border-radius: 2px;
-    background-color: rgba(137, 218, 139, 0.859);
+    background-color: rgba(249, 142, 187, 0.859);
     box-shadow: 10px 10px 7px -7px rgba(204,204,204,1);
     display: flex;
     align-items: center;
     margin: 5px;
+}
+#download:hover {
+    cursor: pointer;
+}
+#dlText {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 #arrowIcon {
     width: 15px;
@@ -72,9 +81,12 @@ li {
 .infoTitle {
     margin-top: 3%;
 }
-.line {
-    background-color: rgba(137, 218, 139, 0.859);
+.line, .subline {
+    background-color: rgba(249, 142, 187, 0.859);
     width: 100%;
+    height: 2px;
+}
+.subline {
     height: 2px;
 }
 .workHeader, .schoolHeader {
@@ -85,24 +97,34 @@ li {
 }
 .personalPic {
     width: 50%;
+    border: 1px solid darkgrey;
     border-radius: 35%;
+}
+.personalBox {
+    text-align: center;
 }
 
 @media (min-width: 756px){
     body {
         display: flex;
     }
+    #name {
+        font-size: 3vw;
+    }
     #rightContainer {
-        flex-basis: 80%;
+        flex-basis: 85%;
     }
     #headshot{
         width: 75%;
     }
     #download {
-        font-size: 19px;
+        font-size: 2vw;
     }
     #infoBox, #personal {
-        font-size: 19px;
+        font-size: 1.5vw;
+    }
+    .subline {
+        height: 1px;
     }
     .personalPic {
         width: 25%;
