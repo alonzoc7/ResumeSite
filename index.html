@@ -31,7 +31,7 @@
           id="locationIcon"
           class="icons"
         />
-        <div id="location" class="navInfo">Oswego, IL</div>
+        <div id="location">Oswego, IL</div>
       </div>
       <div id="emailBox">
         <img
@@ -40,20 +40,17 @@
           id="emailIcon"
           class="icons"
         />
-        <div id="email" class="navInfo">alonzoc713@gmail.com</div>
+        <div id="email">alonzoc713@gmail.com</div>
       </div>
       <div id="socialsBox">
-        <a
-          href="https://www.linkedin.com/in/corey-alonzo/"
-          id="linkedIn"
-          class="navInfo"
+        <a href="https://www.linkedin.com/in/corey-alonzo/" id="linkedIn"
           ><img
             src="./images/linkedinIcon.png"
             alt="linked_in_icon"
             id="linkedInIcon"
             class="icons"
         /></a>
-        <a href="https://github.com/alonzoc7" id="github" class="navInfo"
+        <a href="https://github.com/alonzoc7" id="github"
           ><img
             src="./images/githubIcon.png"
             alt="github_icon"
@@ -66,23 +63,26 @@
           id="dlText"
           href="./files/engineeringResume.pdf"
           download="coreyAlonzoResume.pdf"
-          ><img src="./images/arrowIcon.png" alt="arrow_icon" id="arrowIcon" />
+          ><img
+            src="./images/arrowIcon.png"
+            alt="arrow_icon"
+            id="arrowIcon"
+            class="icons"
+          />
           Download Resume</a
         >
       </button>
     </div>
     <div id="rightContainer">
       <div id="infoBox">
-        <h3 id="about">About Me</h3>
+        <h3 id="aboutHeader">About Me</h3>
         <div class="line"></div>
         <p id="aboutText">
           I'm a software engineer with experience in fullstack, cloud services,
           microservice architecture, and containerization. I'm currently
-          interested in a frontend position. Check out the my github repo for
-          this website
-          <a href="https://github.com/alonzoc7/resumeSiteBasic">here</a>.
+          interested in a frontend position.
         </p>
-        <h3 id="skills" class="infoTitle">Skills</h3>
+        <h3 id="skills" class="sectionHeader">Skills</h3>
         <div class="line"></div>
         <ul id="skillsList">
           <li><b>Languages</b>: Python, Javascript, HTML, CSS, Java, C++</li>
@@ -93,7 +93,7 @@
             Written Communication
           </li>
         </ul>
-        <h3 id="experience" class="infoTitle">Work Experience</h3>
+        <h3 id="experience" class="sectionHeader">Work Experience</h3>
         <div class="line"></div>
         <p class="workHeader">Senior Software Engineer - Capgemini</p>
         <p class="workSubHeader">Chicago, IL</p>
@@ -118,7 +118,7 @@
           <li>Ensure storefront cleanliness and organization.</li>
           <li>Manage newer staff.</li>
         </ul>
-        <h3 id="school" class="infoTitle">School</h3>
+        <h3 id="school" class="sectionHeader">School</h3>
         <div class="line"></div>
         <p class="schoolHeader">B.A. Computer Science, Psychology Minor</p>
         <p class="schoolSubHeader">North Central College, 2021</p>
@@ -133,23 +133,61 @@
           <li>Psi Beta National Honor Society</li>
           <li>Phi Theta Kappa Honor Society</li>
         </ul>
-        <h3 id="awards" class="infoTitle">Awards</h3>
+        <h3 id="awards" class="sectionHeader">Awards</h3>
         <div class="line"></div>
         <ul>
-          <li>North Central College 2018 Dean's List</li>
-          <li>Recipient of the Lucile Gustafson Scholarship</li>
+          <li>North Central College 2018 Dean's List for a >3.6 GPA.</li>
+          <li>
+            Recipient of the Lucile Gustafson Scholarship for exceptional grades
+            and community service hours.
+          </li>
         </ul>
       </div>
-      <div id="projects">
-        <h3>Projects</h3>
+      <div id="projectsBox">
+        <h3 id="projectsHeader">Projects</h3>
         <div class="line"></div>
+        <div class="projectSection">
+          <h3 class="projTitle">Python Project</h3>
+          <p id="projDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            ratione. Natus incidunt quas ipsum magni, quis aut necessitatibus
+            excepturi quia!
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="projectSection">
+          <h3 class="projTitle">Javascript Project</h3>
+          <p id="projDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            ratione. Natus incidunt quas ipsum magni, quis aut necessitatibus
+            excepturi quia!
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="projectSection">
+          <h3 class="projTitle">Java Project</h3>
+          <p id="projDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            ratione. Natus incidunt quas ipsum magni, quis aut necessitatibus
+            excepturi quia!
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="projectBox">
+          <h3 class="projTitle">C++ Project</h3>
+          <p id="projDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            ratione. Natus incidunt quas ipsum magni, quis aut necessitatibus
+            excepturi quia!
+          </p>
+        </div>
       </div>
-      <div id="personal">
-        <h3 id="personalAbout">More About Me Personally!</h3>
+      <div id="personalBox">
+        <h3 id="personalHeader">More About Me Personally!</h3>
         <div class="line"></div>
-        <div class="personalBox">
+        <div class="personalSection">
           <p>
-            I love spending time with family, especially eating together! My two
+            I love spending time with family, especially eating together. My two
             favorite meals are my grandma's pork adobo with rice, and a classic
             cheeseburger with fries - preferably from Portillo's.
           </p>
@@ -164,9 +202,9 @@
           />
         </div>
         <div class="subline"></div>
-        <div class="personalBox">
+        <div class="personalSection">
           <p>
-            A couple of my hobbies are playing video games, watching animated
+            A few of my hobbies are playing video games, watching animated
             shows, and cosplaying characters from media I love.
           </p>
           <img
@@ -174,16 +212,16 @@
             alt="rebecca_chambers"
             class="personalPic"
           /><img
-            src="./images/cosplay2.jpeg"
+            src="./images/cosplay.jpeg"
             alt="cosplay"
             class="personalPic"
           />
         </div>
         <div class="subline"></div>
-        <div class="personalBox">
+        <div class="personalSection">
           <p>
-            My favorite holiday is Halloween and I love scary movies/games. I
-            adore Halloween themed treats and decor!
+            My favorite holiday is Halloween and I love everything spooky! From
+            spooky games and movies, to decor and fashion.
           </p>
           <img
             src="./images/Resi4-gc-cover.jpg"
@@ -192,23 +230,6 @@
           /><img
             src="./images/scaryGodmother.jpg"
             alt="scary_godmother_halloween_spooktacular"
-            class="personalPic"
-          />
-        </div>
-        <div class="subline"></div>
-        <div class="personalBox">
-          <p>
-            Something interesting about me is that I've changed my hair color a
-            few times. I've had platinum blond, green, purple, magenta, and
-            pink. Although, I think I'm sticking with pink for now!
-          </p>
-          <img
-            src="./images/greenHair.jpeg"
-            alt="green_hair"
-            class="personalPic"
-          /><img
-            src="./images/purpleHair.jpeg"
-            alt="purple_hair"
             class="personalPic"
           />
         </div>

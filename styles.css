@@ -14,7 +14,7 @@ body {
     align-items: center;
     height: fit-content;
 }
-#navBox, #infoBox, #personal, #projects {
+#navBox, #infoBox, #personalBox, #projectsBox {
     border: 1px solid darkgray;
     border-radius: 5px;
     margin: 15px;
@@ -37,8 +37,7 @@ body {
     margin-left: 2px;
 }
 .icons {
-    width: 30px;
-    height: 30px;
+    width: 10vw;
 }
 #locationBox, #emailBox {
     display: flex;
@@ -68,8 +67,7 @@ body {
     align-items: center;
 }
 #arrowIcon {
-    width: 15px;
-    height: 15px;
+    width: 5vw;
 }
 #infoBox {
     display: flex;
@@ -78,8 +76,12 @@ body {
 li {
     margin-left: 5%;
 }
-.infoTitle {
-    margin-top: 3%;
+#aboutHeader, #projectsHeader, #personalHeader {
+    text-align: center;
+}
+.sectionHeader {
+    margin-top: 2%;
+    text-align: center;
 }
 .line, .subline {
     background-color: rgba(249, 142, 187, 0.859);
@@ -100,7 +102,7 @@ li {
     border: 1px solid darkgrey;
     border-radius: 35%;
 }
-.personalBox {
+.personalSection {
     text-align: center;
 }
 
@@ -111,8 +113,14 @@ li {
     #name {
         font-size: 3vw;
     }
+    .icons {
+        width: 3vw;
+    }
+    #arrowIcon {
+        width: 2vw;
+    }
     #rightContainer {
-        flex-basis: 85%;
+        flex-basis: 100%;
     }
     #headshot{
         width: 75%;
@@ -120,7 +128,7 @@ li {
     #download {
         font-size: 2vw;
     }
-    #infoBox, #personal {
+    #infoBox, #projectsBox, #personalBox {
         font-size: 1.5vw;
     }
     .subline {
@@ -129,9 +137,33 @@ li {
     .personalPic {
         width: 25%;
     }
-    .personalBox{
+    .personalSection{
         display: flex;
         align-items: center;
         margin: 5px;
+    }
+}
+
+@media (min-width: 1440px){
+    #name {
+        font-size: 2vw;
+    }
+    #pronouns {
+        font-size: 1vw;
+    }
+    #occupation, #location, #email, #download {
+        font-size: 1.5vw;
+    }
+    #navBox {
+        flex-basis: 35%;
+    }
+    #headshot{
+        width: 70%;
+    }
+    .sectionHeader {
+        margin-top: 1.5%;
+    }
+    .personalPic {
+        width: 20%;
     }
 }
